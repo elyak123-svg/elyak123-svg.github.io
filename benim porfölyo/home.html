@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfölyo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,800;0,900;1,200&display=swap');
+    </style>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        :root {
+            --color1: orange;
+            --color2: blue;
+            --color3: dodgerblue;
+            --container: 200px;
+
+        }
+
+
+        /*  NAVBAR START */
+        .mynav {
+            padding: 20px var(--container);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .mynav .logo {
+            width: 50px;
+        }
+
+        .mynav .nav-list {
+
+            display: flex;
+        }
+
+        .mynav .nav-link {
+            padding: 0px 20px;
+
+
+        }
+
+        .mynav .nav-link a {
+            font-size: 20px;
+            color: #222;
+            display: inline-flex;
+            position: relative;
+
+        }
+
+        .mynav .nav-link a:hover {
+            color: var(--color2);
+        }
+
+
+        .mynav .nav-link a::before {
+            content: "";
+            width: 0;
+            height: 3px;
+            background-color: var(--color2);
+            border-radius: 5px;
+            position: absolute;
+            bottom: -5px;
+            transition: all .4s;
+
+        }
+
+        .mynav .nav-link:hover a::before {
+
+            width: 100%;
+        }
+
+        /* MAIN START */
+        /* MAIN END */
+
+
+
+
+        /* NAVBAR END */
+
+        /* MAIN START */
+        .content1 {
+            min-height: 90vh;
+            padding: 0px var(--container);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .content1 .subtitle {
+            color: var(--color3);
+            font-weight: 600;
+            font-size: 1.25rem;
+        }
+
+        .content1 .title {
+            margin: 20px 0px;
+            font-size: 4rem;
+            font-weight: 600;
+            line-height: 1;
+
+        }
+
+        .content1 .button-list {
+            margin: 50px 10px;
+            display: flex;
+
+
+        }
+
+        .content1 .btn {
+            padding: 10px 30px;
+            color: white;
+            font-size: 1.25rem;
+            background-color: var(--color3);
+            border-radius: 10px 10px 10px 10px;
+
+        }
+
+        .content1 .btn:hover {
+            background-color: crimson;
+            box-shadow: 0px 0px 8px 2px rgb(85, 20, 33);
+
+        }
+
+
+        .content1 .mydiv {
+            margin: -180px -90px;
+            min-height: 90vh;
+            padding: 0px var(--container);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+
+
+        }
+
+        .content1 .mydiv img {
+            text-shadow: aliceblue;
+            border: 4px solid black;
+            border-radius: 50%;
+            width: 500px;
+
+        }
+
+
+
+
+        /* MAIN END */
+        /* FOOTER START */
+        .container2 {
+            padding: 20px var(--container);
+
+        }
+
+
+        /* FOOTER END */
+        /* MEDİA START  */
+        @media screen and (max-width:1200px) {
+            :root {
+                --container: 150px;
+
+            }
+        }
+        @media screen and (max-width:1000px) {
+            :root {
+                --container: 100px;
+
+            }
+        }
+        @media screen and (max-width:992px) {
+            :root {
+                --container: 80px;
+
+            }
+            .content1 .mydiv img {
+            text-shadow: aliceblue;
+            border: 4px solid black;
+            border-radius: 50%;
+            width: 500px;
+            scale: .8;
+
+        }
+        .container2 {
+            padding-bottom: 30px;
+            padding: 20px var(--container);
+
+        }
+        }
+
+       
+
+
+        @media screen and (max-width:768){
+            .container2 {
+            padding-bottom: 50px;
+            padding: 20px var(--container);
+
+        }
+        
+
+       
+        :root { 
+                --container: 50px; 
+            }
+
+        }
+            
+
+        @media screen and (max-width:576) {
+            .container2 {
+            padding-bottom: 50px;
+            padding: 20px var(--container);
+
+        }
+            :root { 
+                --container: 30px; 
+            }
+        }
+
+        @media screen and (max-width:420) {
+            .content1 .mydiv img {
+            text-shadow: aliceblue;
+            border: 4px solid black;
+            border-radius: 50%;
+            width: 500px;
+            margin-left: 20px;
+
+        }    
+        }
+
+
+
+
+
+
+
+        /* MEDİA END */
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR START -->
+    <header>
+        <nav class="mynav">
+            <img class="logo" src="https://www.svgrepo.com/show/494272/github-round.svg" alt="">
+            <ul class="nav-list">
+                <li class="nav-link"><a href="home.html">Home</a></li>
+                <li class="nav-link"><a href="about.html">About</a></li>
+                <li class="nav-link"><a href="skill.html">Skill</a></li>
+                <li class="nav-link"><a href="work.html">Works</a></li>
+                <li class="nav-link"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- NAVBAR END -->
+    <!-- MAIN START -->
+    <main>
+        <div class="content1">
+            <div class="title-con">
+                <div class="subtitle">Ben Uğurcan Şener</div>
+                <div class="title">Yazılım <br> öğrencisiyim</div>
+                <div class="button-list">
+                    <a class="btn" href="#">Contact</a>
+                </div>
+
+            </div>
+            <div class="mydiv">
+                <img class="img" src="img/Adsız.jpg" alt="">
+            </div>
+        </div>
+    </main>
+    <!-- MAIN END -->
+    <!-- FOOTER START -->
+    <footer>
+        <div class="container2">
+            <div class="logo list">
+                <div class="img">
+                    <img width="40px" src="https://www.svgrepo.com/show/508852/linkedin.svg" alt="">
+                    <img width="40px" src="https://www.svgrepo.com/show/503359/github.svg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+</body>
+
+</html>

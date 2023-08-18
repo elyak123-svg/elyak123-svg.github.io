@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,800;0,900;1,200&display=swap');
+    </style>
+    <style>
+         * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+        :root{
+            --color1: orange;
+            --color2: blue;
+            --color3: dodgerblue;
+            --container: 200px;
+            
+        }
+ 
+
+        /*  NAVBAR START */
+        .mynav {
+            padding: 20px var(--container);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .mynav .logo {
+            width: 50px;
+        }
+
+        .mynav .nav-list {
+            
+            display: flex;
+        }
+
+        .mynav .nav-link {
+            padding: 0px 20px;
+            
+            
+        }
+        .mynav .nav-link a{
+            font-size: 20px;
+            color: #222;
+            display: inline-flex;
+            position: relative;
+            
+        }
+        .mynav .nav-link a:hover{
+            color: var(--color2);
+        }
+        
+
+        .mynav .nav-link a::before{
+            content: "";
+            width: 0;
+            height: 3px;
+            background-color: var(--color2);
+            border-radius: 5px;
+            position: absolute;
+            bottom: -5px;
+            transition: all .4s;
+            
+        }
+        .mynav .nav-link:hover a::before{
+            
+            width: 100%;      
+        }
+        /* MAİN START */
+       
+        .about-img{
+            width: 600px;
+            margin-left: 510px;
+            border-radius: 50px 50px 50px 50px;
+            
+            
+        }
+        .about-name{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .about-text{
+          text-align: center;  
+        }
+        /*MEDİA START */
+        @media screen and (max-width:1200px) {
+            :root{
+            --container: 150px;
+        }
+        .about-img{
+            width: 600px;
+            margin-left: 300px;
+            border-radius: 50px 50px 50px 50px;
+            scale: 0.8;
+        }
+        .about-name{
+            margin-top: 0px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .about-text{
+            margin-bottom: 30px;    
+          text-align: center;  
+        }     
+        }
+        @media screen and (max-width:992px) {
+            :root{
+            --container: 100px;
+        }
+        .about-img{
+            width: 600px;
+            margin-left: 200px;
+            border-radius: 50px 50px 50px 50px;
+            scale: 0.7;
+        }
+        .about-name{
+            margin-top:-50px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .about-text{
+            margin-bottom: 30px;    
+          text-align: center;  
+        }        
+        }
+        @media screen and (max-width:786px) {
+            :root{
+            --container: 50px;
+        }
+        .about-img{
+            width: 600px;
+            margin-left: 100px;
+            border-radius: 50px 50px 50px 50px;
+            scale: 0.6;
+        }
+        .about-name{
+            margin-top:-80px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .about-text{
+            margin-top: 30px;
+        margin-bottom: 40px;    
+          text-align: center;  
+        }        
+        }
+        @media screen and (max-width:576px) {
+            :root{
+            --container: 25px;
+        }
+        .about-img{
+            width: 600px;
+            margin-left: 50px;
+            border-radius: 50px 50px 50px 50px;
+            scale: 0.6;
+        }
+        .about-name{
+            margin-left: 200px;
+            margin-top:-80px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .about-text{
+        margin-left: 250px;        
+        margin-top: 30px;
+        margin-bottom: 50px;    
+          text-align: center;  
+        }                
+        }
+        @media screen and (max-width:420px) {
+            :root{
+            --container: 10px;
+        }
+        .about-img{
+            width: 600px;
+            margin-left: 50px;
+            border-radius: 50px 50px 50px 50px;
+            scale: 0.6;
+        }
+        .about-name{
+            margin-left: 260px;
+            margin-top:-100px;
+            margin-bottom: -30px;
+            
+            display: flex;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .about-text{
+        margin-left: 250px;        
+        margin-top: 30px;
+        margin-bottom: 50px;    
+        text-align: center;  
+        }
+        @media screen and (max-width:300px) {
+            .about-img{
+            width: 600px;
+            margin-left: 20px;
+            border-radius: 50px 50px 50px 50px;
+            scale: 0.6;
+        }
+        .about-name{
+            margin-left: 260px;
+            margin-top:-100px;
+            margin-bottom: -30px;
+            
+            display: flex;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .about-text{
+        margin-left: 250px;        
+        margin-top: 30px;
+        margin-bottom: 50px;    
+        text-align: center;  
+        }            
+        }                        
+        }
+
+
+        /* MEDİA END */
+        /* MAİN END */
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="mynav">
+            <img class="logo"  src="https://www.svgrepo.com/show/494272/github-round.svg" alt="">
+            <ul class="nav-list">
+                <li class="nav-link"><a href="home.html">Home</a></li>
+                <li class="nav-link"><a href="about.html">About</a></li>
+                <li class="nav-link"><a href="skill.html">Skill</a></li>
+                <li class="nav-link"><a href="work.html">Works</a></li>
+                <li class="nav-link"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- MAİN START -->
+    <main>
+        <div class="container-about">
+            <img class="about-img" src="img/resim (2).jpg" alt="">
+            <div class="about-name">I'am Uğurcan</div>
+            <p class="about-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates iusto inventore quis sint expedita placeat rerum quae temporibus similique cupiditate.
+            </p>
+        </div>
+    </main>
+    <!-- MAİN END  -->
+        
+</body>
+</html>

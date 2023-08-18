@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Handjet:wght@100&family=Open+Sans:wght@500;600;700&family=Roboto+Slab:wght@600&family=Roboto:wght@700&display=swap');
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,800;0,900;1,200&display=swap');
+    </style>
+    <style>
+         * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+        :root{
+            --color1: orange;
+            --color2: blue;
+            --color3: dodgerblue;
+            --container: 200px;
+            
+        }
+
+
+        /*  NAVBAR START */
+        .mynav {
+            padding: 20px var(--container);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .mynav .logo {
+            width: 50px;
+        }
+
+        .mynav .nav-list {
+            
+            display: flex;
+        }
+
+        .mynav .nav-link {
+            padding: 0px 20px;
+            
+            
+        }
+        .mynav .nav-link a{
+            font-size: 20px;
+            color: #222;
+            display: inline-flex;
+            position: relative;
+            
+        }
+        .mynav .nav-link a:hover{
+            color: var(--color2);
+        }
+        
+
+        .mynav .nav-link a::before{
+            content: "";
+            width: 0;
+            height: 3px;
+            background-color: var(--color2);
+            border-radius: 5px;
+            position: absolute;
+            bottom: -5px;
+            transition: all .4s;
+            
+        }
+        .mynav .nav-link:hover a::before{
+            
+            width: 100%;
+        }
+        .contact-form{
+           margin: 0px var(--container);
+           
+            
+        }
+        .form-control{
+            font-family: 'Roboto Slab', serif;
+            color: black;
+            font-weight: bold;
+            font-size: 24px;
+            width: 32rem;
+            height: 50px;
+            border-radius: 5px;
+            margin-bottom: 60px;
+        }
+        .contact-buton{
+            padding: 10px;
+            margin-top: 30px;
+           margin-left: 200px;
+        }
+        .button-list{
+            margin: 50px 200px;
+            display: flex;
+            border-radius: 50px;
+            
+        }
+        .button-list .btn{
+            padding: 10px 30px;
+            color: white;
+            font-size: 1.25rem;
+            background-color: var(--color3);
+            border-radius: 10px 10px 10px 10px;
+        }
+        .button-list .btn:hover{
+            background-color: crimson;
+            box-shadow: 0px 0px 8px 2px rgb(85, 20, 33);
+        }
+       
+        /* MEDİA start*/
+        @media screen and(max-width:786px) {
+            .form-control{
+            font-family: 'Roboto Slab', serif;
+            color: black;
+            font-weight: bold;
+            font-size: 24px;
+            width: 32rem;
+            height: 50px;
+            border-radius: 5px;
+            margin-bottom: 60px;
+            
+        }  
+            
+        }            
+        
+        @media screen and(max-width:1200px) {
+            
+        }
+        @media screen and(max-width:1200px) {
+            
+        }
+        @media screen and(max-width:1200px) {
+            
+        }
+        @media screen and(max-width:1200px) {
+            
+        }
+
+
+
+        /* MEDİA End */
+
+
+    </style>    
+</head>
+<body>
+    <header>
+        <nav class="mynav">
+            <img class="logo"  src="https://www.svgrepo.com/show/494272/github-round.svg" alt="">
+            <ul class="nav-list">
+                <li class="nav-link"><a href="home.html">Home</a></li>
+                <li class="nav-link"><a href="about.html">About</a></li>
+                <li class="nav-link"><a href="skill.html">Skill</a></li>
+                <li class="nav-link"><a href="work.html">Works</a></li>
+                <li class="nav-link"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form class="contact-form">
+            <div><input class="form-control" placeholder="Name" type="text"></div>
+            <div><input class="form-control" placeholder="Email" type="text"></div>
+            <div><textarea class="form-kutu" cols="79" rows="10"></textarea>
+            
+            </div>
+            <div class="button-list">
+                <a class="btn" href="#">Contact</a>
+            </div>
+            
+        </form>
+    </main>
+    
+</body>
+</html>
